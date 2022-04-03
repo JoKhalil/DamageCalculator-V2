@@ -1,0 +1,29 @@
+[
+  {
+    "weather": "Clear"
+  },
+  {
+    "weather": "Cloudy"
+  },
+  {
+    "weather": "Rain"
+  },
+  {
+    "weather": "Thunderstorm"
+  },
+  {
+    "weather": "Snow"
+  },
+  {
+    "weather": "Blizzard"
+  },
+  {
+    "weather": "Harsh sunlight"
+  },
+  {
+    "weather": "Sandstorm"
+  },
+  {
+    "weather": "Fog"
+  }
+]

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "8l8s2goU4xs7Q7sxlLDfpr5VywIK2nMmK+VGRI+qpjbuFw3bJwOYwwbu4FUFWqFgUyByV8D6hVcJLHfq9EMsjw==",
+  "dgSpecHash": "MskNYKpCLuGHpyMk1WCsUc0YRTOJAd8aRisqtixOWiuCAoanfczg6HEmtVxkSn5aLDaZvVnTa2F9OYS1Ql8glw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Zouz\\source\\repos\\PokemonCalculator\\PokemonCalculator\\PokemonCalculator.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Zouz\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
