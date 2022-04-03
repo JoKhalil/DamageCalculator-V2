@@ -29,13 +29,34 @@ namespace PokemonCalculator
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.listBoxPokemons = new System.Windows.Forms.ListBox();
+            this.SuspendLayout();
+            // 
+            // listBoxPokemons
+            // 
+            this.listBoxPokemons.FormattingEnabled = true;
+            this.listBoxPokemons.ItemHeight = 15;
+            this.listBoxPokemons.Location = new System.Drawing.Point(54, 37);
+            this.listBoxPokemons.Name = "listBoxPokemons";
+            this.listBoxPokemons.Size = new System.Drawing.Size(120, 49);
+            this.listBoxPokemons.TabIndex = 0;
+            this.listBoxPokemons.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.listBoxPokemons);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.ListBox listBoxPokemons;
     }
 }
 

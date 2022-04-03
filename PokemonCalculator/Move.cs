@@ -32,9 +32,5 @@ namespace PokemonCalculator
             this.category = category;
         }
 
-        public ArrayList jsonToMoves()
-        {
-            
-        }
     }
 }
