@@ -16,21 +16,26 @@ namespace PokemonCalculator
 
         private String name;
         private String type;
-        private int powerPoint;
+        private int power;
         private ArrayList category;
 
         public string Name { get => name; set => name = value; }
         public string Type { get => type; set => type = value; }
-        public int PowerPoint { get => powerPoint; set => powerPoint = value; }
+        public int PowerPoint { get => power; set => power = value; }
         public ArrayList Category { get => category; set => category = value; }
 
-        public Move(String name, String type, int powerPoint, ArrayList category)
+        public Move(ArrayList category, String name, String type, int power)
         {
+            
             this.name = name;
-            this.type = type;
-            this.powerPoint = powerPoint;
+            this.type = type;           
             this.category = category;
+            this.power = power;
         }
 
+        public class Root
+        {
+            public List<Move> Move { get; set; }
+        }
     }
 }
