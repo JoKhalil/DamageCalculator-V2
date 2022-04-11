@@ -17,6 +17,9 @@ namespace PokemonCalculator
 {
     public partial class Form1 : Form
     {
+        private List<Pokemon> pokemonsList = new List<Pokemon>();
+        private List<Move> movesList = new List<Move>();
+
         public Form1()
         {
             
@@ -29,7 +32,7 @@ namespace PokemonCalculator
 
         public void jsonToPokemon()
         {
-            List<Pokemon> pokemonsList = new List<Pokemon>();
+            
 
             String jsonString = File.ReadAllText(@"C:\Users\Zouz\source\repos\PokemonCalculator\PokemonCalculator\json\pokemons.json");
 
@@ -48,7 +51,7 @@ namespace PokemonCalculator
 
         public void jsonToMove()
         {
-            List<Move> movesList = new List<Move>();
+            
 
             String jsonString = File.ReadAllText(@"C:\Users\Zouz\source\repos\PokemonCalculator\PokemonCalculator\json\moves.json");
 
@@ -77,6 +80,47 @@ namespace PokemonCalculator
 
 
             //return movesList;
+        }
+
+        private void comboBoxPokemons_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            foreach (var pokemon in pokemonsList)
+            {
+                if (comboBoxPokemons.SelectedItem.Equals(pokemon.name.english))
+                {
+                    richTextBoxPokemon.Text += "Hp: " + pokemon.@base.HP.ToString() + "\nAttack: " + pokemon.@base.Attack.ToString()
+                        + "\nDefense: " + pokemon.@base.Defense.ToString() + "\nSp. Attack: " + pokemon.@base.SpAttack.ToString()
+                        + "\nSp. Defense: " + pokemon.@base.SpDefense.ToString() + "\nSpeed: " + pokemon.@base.Speed.ToString();
+                    
+                }
+            }
+        }
+
+        private void comboBoxMoves1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            foreach (var move in movesList)
+            {
+                if (comboBoxMoves1.SelectedItem.Equals(move.Name))
+                {
+                    richTextBoxPokemon.Text += move.Name + move.PowerPoint + move.Category + move.Type;
+
+                }
+            }
+        }
+
+        private void comboBoxMoves2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxMoves3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxMoves4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
