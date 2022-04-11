@@ -17,14 +17,14 @@ namespace PokemonCalculator
         private String name;
         private String type;
         private int power;
-        private ArrayList category;
+        private String category;
 
         public string Name { get => name; set => name = value; }
         public string Type { get => type; set => type = value; }
         public int PowerPoint { get => power; set => power = value; }
-        public ArrayList Category { get => category; set => category = value; }
+        public String Category { get => category; set => category = value; }
 
-        public Move(ArrayList category, String name, String type, int power)
+        public Move(String category, String name, String type, int power)
         {
             
             this.name = name;
@@ -33,9 +33,5 @@ namespace PokemonCalculator
             this.power = power;
         }
 
-        public class Root
-        {
-            public List<Move> Move { get; set; }
-        }
     }
 }

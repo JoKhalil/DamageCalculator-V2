@@ -1,0 +1,17 @@
+C:\Users\Zouz\source\repos\PokemonCalculator\PokemonCalculator\bin\Debug\netcoreapp3.1\PokemonCalculator.exe
+C:\Users\Zouz\source\repos\PokemonCalculator\PokemonCalculator\bin\Debug\netcoreapp3.1\PokemonCalculator.deps.json
+C:\Users\Zouz\source\repos\PokemonCalculator\PokemonCalculator\bin\Debug\netcoreapp3.1\PokemonCalculator.runtimeconfig.json
+C:\Users\Zouz\source\repos\PokemonCalculator\PokemonCalculator\bin\Debug\netcoreapp3.1\PokemonCalculator.runtimeconfig.dev.json
+C:\Users\Zouz\source\repos\PokemonCalculator\PokemonCalculator\bin\Debug\netcoreapp3.1\PokemonCalculator.dll
+C:\Users\Zouz\source\repos\PokemonCalculator\PokemonCalculator\bin\Debug\netcoreapp3.1\PokemonCalculator.pdb
+C:\Users\Zouz\source\repos\PokemonCalculator\PokemonCalculator\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Zouz\source\repos\PokemonCalculator\PokemonCalculator\obj\Debug\netcoreapp3.1\PokemonCalculator.csprojAssemblyReference.cache
+C:\Users\Zouz\source\repos\PokemonCalculator\PokemonCalculator\obj\Debug\netcoreapp3.1\PokemonCalculator.Form1.resources
+C:\Users\Zouz\source\repos\PokemonCalculator\PokemonCalculator\obj\Debug\netcoreapp3.1\PokemonCalculator.csproj.GenerateResource.cache
+C:\Users\Zouz\source\repos\PokemonCalculator\PokemonCalculator\obj\Debug\netcoreapp3.1\PokemonCalculator.AssemblyInfoInputs.cache
+C:\Users\Zouz\source\repos\PokemonCalculator\PokemonCalculator\obj\Debug\netcoreapp3.1\PokemonCalculator.AssemblyInfo.cs
+C:\Users\Zouz\source\repos\PokemonCalculator\PokemonCalculator\obj\Debug\netcoreapp3.1\PokemonCalculator.csproj.CoreCompileInputs.cache
+C:\Users\Zouz\source\repos\PokemonCalculator\PokemonCalculator\obj\Debug\netcoreapp3.1\PokemonCalculator.csproj.CopyComplete
+C:\Users\Zouz\source\repos\PokemonCalculator\PokemonCalculator\obj\Debug\netcoreapp3.1\PokemonCalculator.dll
+C:\Users\Zouz\source\repos\PokemonCalculator\PokemonCalculator\obj\Debug\netcoreapp3.1\PokemonCalculator.pdb
+C:\Users\Zouz\source\repos\PokemonCalculator\PokemonCalculator\obj\Debug\netcoreapp3.1\PokemonCalculator.genruntimeconfig.cache

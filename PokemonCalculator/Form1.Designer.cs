@@ -38,7 +38,7 @@ namespace PokemonCalculator
             this.listBoxPokemons.ItemHeight = 15;
             this.listBoxPokemons.Location = new System.Drawing.Point(54, 37);
             this.listBoxPokemons.Name = "listBoxPokemons";
-            this.listBoxPokemons.Size = new System.Drawing.Size(120, 49);
+            this.listBoxPokemons.Size = new System.Drawing.Size(223, 79);
             this.listBoxPokemons.TabIndex = 0;
             this.listBoxPokemons.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 

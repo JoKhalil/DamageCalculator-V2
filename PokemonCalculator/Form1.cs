@@ -10,6 +10,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.Json;
+using Newtonsoft.Json;
 
 namespace PokemonCalculator
 {
@@ -20,15 +22,42 @@ namespace PokemonCalculator
             
 
             InitializeComponent();
-            
+            jsonToMove();
 
 
         }
 
         public void jsonToMove()
         {
-            List<Move> movesList = new List<Move>();
+            IList<Move> movesList = new List<Move>();
 
+
+            //using (StreamReader file = File.OpenText(@"\json\moves.json"))
+            //using (JsonTextReader reader = new JsonTextReader(file))
+            //{
+            //    JObject jsonToken = (JObject)JToken.ReadFrom(reader);
+
+
+
+            //}
+            String jsonString = File.ReadAllText(@"C:\Users\Zouz\source\repos\PokemonCalculator\PokemonCalculator\json\moves.json");
+
+            JObject jsonParse = JObject.Parse(jsonString);
+
+            JArray jsonArray = (JArray)jsonParse["Move"];
+
+            movesList = jsonArray.ToObject<IList<Move>>();
+
+            //listBoxPokemons.DataSource = movesList;
+
+            foreach (var moves in movesList)
+            {
+                if (moves.Name != null)
+                {
+                    listBoxPokemons.Items.Add(moves.Name);
+                }
+                
+            }
 
 
             //return movesList;
