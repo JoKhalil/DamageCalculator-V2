@@ -29,23 +29,63 @@ namespace PokemonCalculator
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBoxMoves = new System.Windows.Forms.ComboBox();
+            this.comboBoxMoves1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxMoves2 = new System.Windows.Forms.ComboBox();
+            this.comboBoxMoves3 = new System.Windows.Forms.ComboBox();
+            this.comboBoxMoves4 = new System.Windows.Forms.ComboBox();
+            this.comboBoxPokemons = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // comboBoxMoves
+            // comboBoxMoves1
             // 
-            this.comboBoxMoves.FormattingEnabled = true;
-            this.comboBoxMoves.Location = new System.Drawing.Point(66, 50);
-            this.comboBoxMoves.Name = "comboBoxMoves";
-            this.comboBoxMoves.Size = new System.Drawing.Size(121, 23);
-            this.comboBoxMoves.TabIndex = 1;
+            this.comboBoxMoves1.FormattingEnabled = true;
+            this.comboBoxMoves1.Location = new System.Drawing.Point(39, 123);
+            this.comboBoxMoves1.Name = "comboBoxMoves1";
+            this.comboBoxMoves1.Size = new System.Drawing.Size(121, 23);
+            this.comboBoxMoves1.TabIndex = 1;
+            // 
+            // comboBoxMoves2
+            // 
+            this.comboBoxMoves2.FormattingEnabled = true;
+            this.comboBoxMoves2.Location = new System.Drawing.Point(166, 123);
+            this.comboBoxMoves2.Name = "comboBoxMoves2";
+            this.comboBoxMoves2.Size = new System.Drawing.Size(121, 23);
+            this.comboBoxMoves2.TabIndex = 2;
+            // 
+            // comboBoxMoves3
+            // 
+            this.comboBoxMoves3.FormattingEnabled = true;
+            this.comboBoxMoves3.Location = new System.Drawing.Point(39, 152);
+            this.comboBoxMoves3.Name = "comboBoxMoves3";
+            this.comboBoxMoves3.Size = new System.Drawing.Size(121, 23);
+            this.comboBoxMoves3.TabIndex = 3;
+            // 
+            // comboBoxMoves4
+            // 
+            this.comboBoxMoves4.FormattingEnabled = true;
+            this.comboBoxMoves4.Location = new System.Drawing.Point(166, 152);
+            this.comboBoxMoves4.Name = "comboBoxMoves4";
+            this.comboBoxMoves4.Size = new System.Drawing.Size(121, 23);
+            this.comboBoxMoves4.TabIndex = 4;
+            // 
+            // comboBoxPokemons
+            // 
+            this.comboBoxPokemons.FormattingEnabled = true;
+            this.comboBoxPokemons.Location = new System.Drawing.Point(39, 38);
+            this.comboBoxPokemons.Name = "comboBoxPokemons";
+            this.comboBoxPokemons.Size = new System.Drawing.Size(121, 23);
+            this.comboBoxPokemons.TabIndex = 5;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.comboBoxMoves);
+            this.Controls.Add(this.comboBoxPokemons);
+            this.Controls.Add(this.comboBoxMoves4);
+            this.Controls.Add(this.comboBoxMoves3);
+            this.Controls.Add(this.comboBoxMoves2);
+            this.Controls.Add(this.comboBoxMoves1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -53,7 +93,11 @@ namespace PokemonCalculator
         }
 
         #endregion
-        private System.Windows.Forms.ComboBox comboBoxMoves;
+        private System.Windows.Forms.ComboBox comboBoxMoves1;
+        private System.Windows.Forms.ComboBox comboBoxMoves2;
+        private System.Windows.Forms.ComboBox comboBoxMoves3;
+        private System.Windows.Forms.ComboBox comboBoxMoves4;
+        private System.Windows.Forms.ComboBox comboBoxPokemons;
     }
 }
 

@@ -7,16 +7,22 @@ namespace PokemonCalculator
 {
     class Pokemon
     {
-        private String name;
+
+        public int id { get; set; }
+        public Name name { get; set; }
+        public List<string> type { get; set; }
+        public Base @base { get; set; }
+
+        /*private List<String> name;
         private int level;
-        private ArrayList moves;
+        private List<Move> moves;
         private int attack;
         private int defense;
         private int spAttack;
         private int spDefense;
         private String type;
 
-        public Pokemon(String name, int level, ArrayList moves, int attack, int defense, int spAttack, int spDefense, String type)
+        public Pokemon(List<String> name, int level, List<Move> moves, int attack, int defense, int spAttack, int spDefense, String type)
         {
             this.Name = name;
             this.Level = level;
@@ -28,9 +34,15 @@ namespace PokemonCalculator
             this.Type = type;
         }
 
-        public string Name { get => name; set => name = value; }
+        public Pokemon(List<String> name, String type)
+        {
+            this.Name = name;
+            this.Type = type;
+        }
+
+        public List<String> Name { get => name; set => name = value; }
         public int Level { get => level; set => level = value; }
-        public ArrayList Moves { get => moves; set => moves = value; }
+        public List<Move> Moves { get => moves; set => moves = value; }
         public int Attack { get => attack; set => attack = value; }
         public int Defense { get => defense; set => defense = value; }
         public int SpAttack { get => spAttack; set => spAttack = value; }
@@ -39,9 +51,9 @@ namespace PokemonCalculator
 
         public override string ToString()
         {
-            return this.name + " " + this.level + " " + this.moves + " Attack: " + this.attack + " Defense: " 
+            return this.name[0] + " " + this.level + " " + this.moves + " Attack: " + this.attack + " Defense: " 
                + this.defense + " Special Attack: " + this.spAttack + " Special Defense: " + this.spDefense
                + " " + this.type;
-        }
+        }*/
     }
 }

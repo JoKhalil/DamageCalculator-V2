@@ -23,30 +23,40 @@ namespace PokemonCalculator
 
             InitializeComponent();
             jsonToMove();
-
+            jsonToPokemon();
 
         }
 
+        public void jsonToPokemon()
+        {
+            List<Pokemon> pokemonsList = new List<Pokemon>();
+
+            String jsonString = File.ReadAllText(@"C:\Users\Zouz\source\repos\PokemonCalculator\PokemonCalculator\json\pokemons.json");
+
+            JObject jsonParse = JObject.Parse(jsonString);
+
+            JArray jsonArray = (JArray)jsonParse["Pokemon"];
+
+            pokemonsList = jsonArray.ToObject<List<Pokemon>>();
+
+            foreach (var pokemons in pokemonsList)
+            {
+                comboBoxPokemons.Items.Add(pokemons.name.english);
+            }
+        }
+
+
         public void jsonToMove()
         {
-            IList<Move> movesList = new List<Move>();
+            List<Move> movesList = new List<Move>();
 
-
-            //using (StreamReader file = File.OpenText(@"\json\moves.json"))
-            //using (JsonTextReader reader = new JsonTextReader(file))
-            //{
-            //    JObject jsonToken = (JObject)JToken.ReadFrom(reader);
-
-
-
-            //}
             String jsonString = File.ReadAllText(@"C:\Users\Zouz\source\repos\PokemonCalculator\PokemonCalculator\json\moves.json");
 
             JObject jsonParse = JObject.Parse(jsonString);
 
             JArray jsonArray = (JArray)jsonParse["Move"];
 
-            movesList = jsonArray.ToObject<IList<Move>>();
+            movesList = jsonArray.ToObject<List<Move>>();
 
             //listBoxPokemons.DataSource = movesList;
 
@@ -54,7 +64,13 @@ namespace PokemonCalculator
             {
                 if (moves.Name != null)
                 {
-                   comboBoxMoves.Items.Add(moves.Name);
+                    
+
+
+                    comboBoxMoves1.Items.Add(moves.Name);
+                    comboBoxMoves2.Items.Add(moves.Name);
+                    comboBoxMoves3.Items.Add(moves.Name);
+                    comboBoxMoves4.Items.Add(moves.Name);
                 }
                 
             }
