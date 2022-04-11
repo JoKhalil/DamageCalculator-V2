@@ -54,18 +54,13 @@ namespace PokemonCalculator
             {
                 if (moves.Name != null)
                 {
-                    listBoxPokemons.Items.Add(moves.Name);
+                   comboBoxMoves.Items.Add(moves.Name);
                 }
                 
             }
 
 
             //return movesList;
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

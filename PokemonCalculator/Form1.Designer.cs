@@ -29,25 +29,23 @@ namespace PokemonCalculator
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBoxPokemons = new System.Windows.Forms.ListBox();
+            this.comboBoxMoves = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // listBoxPokemons
+            // comboBoxMoves
             // 
-            this.listBoxPokemons.FormattingEnabled = true;
-            this.listBoxPokemons.ItemHeight = 15;
-            this.listBoxPokemons.Location = new System.Drawing.Point(54, 37);
-            this.listBoxPokemons.Name = "listBoxPokemons";
-            this.listBoxPokemons.Size = new System.Drawing.Size(223, 79);
-            this.listBoxPokemons.TabIndex = 0;
-            this.listBoxPokemons.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.comboBoxMoves.FormattingEnabled = true;
+            this.comboBoxMoves.Location = new System.Drawing.Point(66, 50);
+            this.comboBoxMoves.Name = "comboBoxMoves";
+            this.comboBoxMoves.Size = new System.Drawing.Size(121, 23);
+            this.comboBoxMoves.TabIndex = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.listBoxPokemons);
+            this.Controls.Add(this.comboBoxMoves);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -55,8 +53,7 @@ namespace PokemonCalculator
         }
 
         #endregion
-
-        private System.Windows.Forms.ListBox listBoxPokemons;
+        private System.Windows.Forms.ComboBox comboBoxMoves;
     }
 }
 
