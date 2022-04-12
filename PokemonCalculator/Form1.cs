@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.Json;
 using Newtonsoft.Json;
+using PokemonCalculator.typechart;
 
 namespace PokemonCalculator
 {
@@ -19,6 +20,7 @@ namespace PokemonCalculator
     {
         private List<Pokemon> pokemonsList = new List<Pokemon>();
         private List<Move> movesList = new List<Move>();
+        private List<TypeChart> typeChartsList = new List<TypeChart>();
 
         public Form1()
         {
@@ -27,8 +29,25 @@ namespace PokemonCalculator
             InitializeComponent();
             jsonToMove();
             jsonToPokemon();
+            jsonToTypeChart();
             
 
+        }
+
+        public void jsonToTypeChart()
+        {
+            String jsonString = File.ReadAllText(@"C:\Users\Zouz\source\repos\PokemonCalculator\PokemonCalculator\json\typeChart.json");
+
+            JObject jsonParse = JObject.Parse(jsonString);
+
+            JArray jsonArray = (JArray)jsonParse["TypeChart"];
+
+            typeChartsList = jsonArray.ToObject<List<TypeChart>>();
+
+            foreach (var typeChart in typeChartsList)
+            {
+                label1.Text = typeChart.fairy.dragon.ToString();
+            }
         }
 
         public void jsonToPokemon()
@@ -43,9 +62,9 @@ namespace PokemonCalculator
 
             pokemonsList = jsonArray.ToObject<List<Pokemon>>();
 
-            foreach (var pokemons in pokemonsList)
+            foreach (var pokemon in pokemonsList)
             {
-                comboBoxPokemons.Items.Add(pokemons.name.english);
+                comboBoxPokemons.Items.Add(pokemon.name.english);
             }
         }
 
@@ -64,17 +83,17 @@ namespace PokemonCalculator
 
             //listBoxPokemons.DataSource = movesList;
 
-            foreach (var moves in movesList)
+            foreach (var move in movesList)
             {
-                if (moves.Name != null)
+                if (move.Name != null)
                 {
                     
 
 
-                    comboBoxMoves1.Items.Add(moves.Name);
-                    comboBoxMoves2.Items.Add(moves.Name);
-                    comboBoxMoves3.Items.Add(moves.Name);
-                    comboBoxMoves4.Items.Add(moves.Name);
+                    comboBoxMoves1.Items.Add(move.Name);
+                    comboBoxMoves2.Items.Add(move.Name);
+                    comboBoxMoves3.Items.Add(move.Name);
+                    comboBoxMoves4.Items.Add(move.Name);
                 }
                 
             }

@@ -52,6 +52,7 @@ namespace PokemonCalculator
             this.labelPower2 = new System.Windows.Forms.Label();
             this.labelPower3 = new System.Windows.Forms.Label();
             this.labelPower4 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCategory1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCategory3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCategory2)).BeginInit();
@@ -119,6 +120,7 @@ namespace PokemonCalculator
             // 
             // buttonMove1
             // 
+            this.buttonMove1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonMove1.Location = new System.Drawing.Point(450, 43);
             this.buttonMove1.Name = "buttonMove1";
             this.buttonMove1.Size = new System.Drawing.Size(158, 63);
@@ -127,6 +129,7 @@ namespace PokemonCalculator
             // 
             // buttonMove3
             // 
+            this.buttonMove3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonMove3.Location = new System.Drawing.Point(450, 124);
             this.buttonMove3.Name = "buttonMove3";
             this.buttonMove3.Size = new System.Drawing.Size(158, 63);
@@ -135,6 +138,7 @@ namespace PokemonCalculator
             // 
             // buttonMove2
             // 
+            this.buttonMove2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonMove2.Location = new System.Drawing.Point(630, 43);
             this.buttonMove2.Name = "buttonMove2";
             this.buttonMove2.Size = new System.Drawing.Size(158, 63);
@@ -143,6 +147,7 @@ namespace PokemonCalculator
             // 
             // buttonMove4
             // 
+            this.buttonMove4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.buttonMove4.Location = new System.Drawing.Point(630, 124);
             this.buttonMove4.Name = "buttonMove4";
             this.buttonMove4.Size = new System.Drawing.Size(158, 63);
@@ -267,11 +272,21 @@ namespace PokemonCalculator
             this.labelPower4.Size = new System.Drawing.Size(2, 17);
             this.labelPower4.TabIndex = 23;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(37, 245);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 15);
+            this.label1.TabIndex = 24;
+            this.label1.Text = "label1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.labelPower4);
             this.Controls.Add(this.labelPower3);
             this.Controls.Add(this.labelPower2);
@@ -335,6 +350,7 @@ namespace PokemonCalculator
         private System.Windows.Forms.Label labelPower3;
         private System.Windows.Forms.Label labelPower4;
         private System.Windows.Forms.Label labelPower1;
+        private System.Windows.Forms.Label label1;
     }
 }
 
