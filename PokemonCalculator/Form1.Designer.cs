@@ -65,6 +65,7 @@ namespace PokemonCalculator
             this.comboBoxMoves2.Name = "comboBoxMoves2";
             this.comboBoxMoves2.Size = new System.Drawing.Size(121, 23);
             this.comboBoxMoves2.TabIndex = 2;
+            this.comboBoxMoves2.SelectedIndexChanged += new System.EventHandler(this.comboBoxMoves2_SelectedIndexChanged);
             // 
             // comboBoxMoves3
             // 
@@ -73,6 +74,7 @@ namespace PokemonCalculator
             this.comboBoxMoves3.Name = "comboBoxMoves3";
             this.comboBoxMoves3.Size = new System.Drawing.Size(121, 23);
             this.comboBoxMoves3.TabIndex = 3;
+            this.comboBoxMoves3.SelectedIndexChanged += new System.EventHandler(this.comboBoxMoves3_SelectedIndexChanged);
             // 
             // comboBoxMoves4
             // 
@@ -81,6 +83,7 @@ namespace PokemonCalculator
             this.comboBoxMoves4.Name = "comboBoxMoves4";
             this.comboBoxMoves4.Size = new System.Drawing.Size(121, 23);
             this.comboBoxMoves4.TabIndex = 4;
+            this.comboBoxMoves4.SelectedIndexChanged += new System.EventHandler(this.comboBoxMoves4_SelectedIndexChanged);
             // 
             // comboBoxPokemons
             // 
@@ -151,9 +154,9 @@ namespace PokemonCalculator
             // 
             // pictureBoxCategory4
             // 
-            this.pictureBoxCategory4.Location = new System.Drawing.Point(757, 124);
+            this.pictureBoxCategory4.Location = new System.Drawing.Point(750, 124);
             this.pictureBoxCategory4.Name = "pictureBoxCategory4";
-            this.pictureBoxCategory4.Size = new System.Drawing.Size(31, 16);
+            this.pictureBoxCategory4.Size = new System.Drawing.Size(38, 16);
             this.pictureBoxCategory4.TabIndex = 13;
             this.pictureBoxCategory4.TabStop = false;
             // 
