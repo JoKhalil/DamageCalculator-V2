@@ -89,10 +89,11 @@ namespace PokemonCalculator
             {
                 if (comboBoxPokemons.SelectedItem.Equals(pokemon.name.english))
                 {
-                    richTextBoxPokemon.Text += "Hp: " + pokemon.@base.HP.ToString() + "\nAttack: " + pokemon.@base.Attack.ToString()
+                    richTextBoxPokemon.Text = "Hp: " + pokemon.@base.HP.ToString() + "\nAttack: " + pokemon.@base.Attack.ToString()
                         + "\nDefense: " + pokemon.@base.Defense.ToString() + "\nSp. Attack: " + pokemon.@base.SpAttack.ToString()
                         + "\nSp. Defense: " + pokemon.@base.SpDefense.ToString() + "\nSpeed: " + pokemon.@base.Speed.ToString();
-                    
+
+                    pictureBoxPokemon.ImageLocation = "https://img.pokemondb.net/sprites/sword-shield/icon/" + pokemon.name.english.ToLower() + ".png";
                 }
             }
         }
@@ -276,7 +277,7 @@ namespace PokemonCalculator
 
         private void comboBoxMoves2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            moveDetailsCategory(comboBoxMoves2, pictureBoxCategory2, pictureBoxType2, buttonMove2);
+            moveDetailsCategory(comboBoxMoves2, pictureBoxCategory4, pictureBoxType2, buttonMove2);
         }
 
         private void comboBoxMoves3_SelectedIndexChanged(object sender, EventArgs e)
@@ -286,7 +287,7 @@ namespace PokemonCalculator
 
         private void comboBoxMoves4_SelectedIndexChanged(object sender, EventArgs e)
         {
-            moveDetailsCategory(comboBoxMoves4, pictureBoxCategory4, pictureBoxType4, buttonMove4);
+            moveDetailsCategory(comboBoxMoves4, pictureBoxCategory2, pictureBoxType4, buttonMove4);
         }
     }
 }

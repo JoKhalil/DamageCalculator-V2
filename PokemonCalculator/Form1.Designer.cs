@@ -41,26 +41,28 @@ namespace PokemonCalculator
             this.buttonMove4 = new System.Windows.Forms.Button();
             this.pictureBoxCategory1 = new System.Windows.Forms.PictureBox();
             this.pictureBoxCategory3 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxCategory4 = new System.Windows.Forms.PictureBox();
             this.pictureBoxCategory2 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxCategory4 = new System.Windows.Forms.PictureBox();
             this.pictureBoxType1 = new System.Windows.Forms.PictureBox();
             this.pictureBoxType3 = new System.Windows.Forms.PictureBox();
             this.pictureBoxType2 = new System.Windows.Forms.PictureBox();
             this.pictureBoxType4 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxPokemon = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCategory1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCategory3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCategory4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCategory2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCategory4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxType1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxType3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxType2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxType4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPokemon)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBoxMoves1
             // 
             this.comboBoxMoves1.FormattingEnabled = true;
-            this.comboBoxMoves1.Location = new System.Drawing.Point(39, 72);
+            this.comboBoxMoves1.Location = new System.Drawing.Point(37, 135);
             this.comboBoxMoves1.Name = "comboBoxMoves1";
             this.comboBoxMoves1.Size = new System.Drawing.Size(121, 23);
             this.comboBoxMoves1.TabIndex = 1;
@@ -69,7 +71,7 @@ namespace PokemonCalculator
             // comboBoxMoves2
             // 
             this.comboBoxMoves2.FormattingEnabled = true;
-            this.comboBoxMoves2.Location = new System.Drawing.Point(166, 72);
+            this.comboBoxMoves2.Location = new System.Drawing.Point(164, 135);
             this.comboBoxMoves2.Name = "comboBoxMoves2";
             this.comboBoxMoves2.Size = new System.Drawing.Size(121, 23);
             this.comboBoxMoves2.TabIndex = 2;
@@ -78,7 +80,7 @@ namespace PokemonCalculator
             // comboBoxMoves3
             // 
             this.comboBoxMoves3.FormattingEnabled = true;
-            this.comboBoxMoves3.Location = new System.Drawing.Point(39, 101);
+            this.comboBoxMoves3.Location = new System.Drawing.Point(37, 164);
             this.comboBoxMoves3.Name = "comboBoxMoves3";
             this.comboBoxMoves3.Size = new System.Drawing.Size(121, 23);
             this.comboBoxMoves3.TabIndex = 3;
@@ -87,7 +89,7 @@ namespace PokemonCalculator
             // comboBoxMoves4
             // 
             this.comboBoxMoves4.FormattingEnabled = true;
-            this.comboBoxMoves4.Location = new System.Drawing.Point(166, 101);
+            this.comboBoxMoves4.Location = new System.Drawing.Point(164, 164);
             this.comboBoxMoves4.Name = "comboBoxMoves4";
             this.comboBoxMoves4.Size = new System.Drawing.Size(121, 23);
             this.comboBoxMoves4.TabIndex = 4;
@@ -96,7 +98,7 @@ namespace PokemonCalculator
             // comboBoxPokemons
             // 
             this.comboBoxPokemons.FormattingEnabled = true;
-            this.comboBoxPokemons.Location = new System.Drawing.Point(102, 43);
+            this.comboBoxPokemons.Location = new System.Drawing.Point(100, 106);
             this.comboBoxPokemons.Name = "comboBoxPokemons";
             this.comboBoxPokemons.Size = new System.Drawing.Size(121, 23);
             this.comboBoxPokemons.TabIndex = 5;
@@ -160,22 +162,22 @@ namespace PokemonCalculator
             this.pictureBoxCategory3.TabIndex = 12;
             this.pictureBoxCategory3.TabStop = false;
             // 
-            // pictureBoxCategory4
-            // 
-            this.pictureBoxCategory4.Location = new System.Drawing.Point(746, 43);
-            this.pictureBoxCategory4.Name = "pictureBoxCategory4";
-            this.pictureBoxCategory4.Size = new System.Drawing.Size(42, 16);
-            this.pictureBoxCategory4.TabIndex = 13;
-            this.pictureBoxCategory4.TabStop = false;
-            // 
             // pictureBoxCategory2
             // 
-            this.pictureBoxCategory2.Location = new System.Drawing.Point(746, 124);
+            this.pictureBoxCategory2.Location = new System.Drawing.Point(746, 43);
             this.pictureBoxCategory2.Name = "pictureBoxCategory2";
             this.pictureBoxCategory2.Size = new System.Drawing.Size(42, 16);
-            this.pictureBoxCategory2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxCategory2.TabIndex = 14;
+            this.pictureBoxCategory2.TabIndex = 13;
             this.pictureBoxCategory2.TabStop = false;
+            // 
+            // pictureBoxCategory4
+            // 
+            this.pictureBoxCategory4.Location = new System.Drawing.Point(746, 124);
+            this.pictureBoxCategory4.Name = "pictureBoxCategory4";
+            this.pictureBoxCategory4.Size = new System.Drawing.Size(42, 16);
+            this.pictureBoxCategory4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxCategory4.TabIndex = 14;
+            this.pictureBoxCategory4.TabStop = false;
             // 
             // pictureBoxType1
             // 
@@ -213,17 +215,26 @@ namespace PokemonCalculator
             this.pictureBoxType4.TabIndex = 18;
             this.pictureBoxType4.TabStop = false;
             // 
+            // pictureBoxPokemon
+            // 
+            this.pictureBoxPokemon.Location = new System.Drawing.Point(130, 43);
+            this.pictureBoxPokemon.Name = "pictureBoxPokemon";
+            this.pictureBoxPokemon.Size = new System.Drawing.Size(64, 58);
+            this.pictureBoxPokemon.TabIndex = 19;
+            this.pictureBoxPokemon.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBoxPokemon);
             this.Controls.Add(this.pictureBoxType4);
             this.Controls.Add(this.pictureBoxType2);
             this.Controls.Add(this.pictureBoxType3);
             this.Controls.Add(this.pictureBoxType1);
-            this.Controls.Add(this.pictureBoxCategory2);
             this.Controls.Add(this.pictureBoxCategory4);
+            this.Controls.Add(this.pictureBoxCategory2);
             this.Controls.Add(this.pictureBoxCategory3);
             this.Controls.Add(this.pictureBoxCategory1);
             this.Controls.Add(this.buttonMove4);
@@ -240,12 +251,13 @@ namespace PokemonCalculator
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCategory1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCategory3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCategory4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCategory2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCategory4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxType1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxType3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxType2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxType4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPokemon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -263,12 +275,13 @@ namespace PokemonCalculator
         private System.Windows.Forms.Button buttonMove4;
         private System.Windows.Forms.PictureBox pictureBoxCategory1;
         private System.Windows.Forms.PictureBox pictureBoxCategory3;
-        private System.Windows.Forms.PictureBox pictureBoxCategory4;
         private System.Windows.Forms.PictureBox pictureBoxCategory2;
+        private System.Windows.Forms.PictureBox pictureBoxCategory4;
         private System.Windows.Forms.PictureBox pictureBoxType1;
         private System.Windows.Forms.PictureBox pictureBoxType3;
         private System.Windows.Forms.PictureBox pictureBoxType2;
         private System.Windows.Forms.PictureBox pictureBoxType4;
+        private System.Windows.Forms.PictureBox pictureBoxPokemon;
     }
 }
 
