@@ -97,49 +97,7 @@ namespace PokemonCalculator
             }
         }
 
-        private void comboBoxMoves1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            moveDetails(comboBoxMoves1, pictureBoxCategory1, buttonMove1);
-
-            /*foreach (var move in movesList)
-            {
-                if (comboBoxMoves1.SelectedItem.Equals(move.Name))
-                {
-                    switch (move.Category)
-                    {
-                        case "Physical":
-                            pictureBoxCategory1.Image = null;
-                            pictureBoxCategory1.Update();
-                            pictureBoxCategory1.ImageLocation = "C:/Users/Zouz/source/repos/PokemonCalculator/PokemonCalculator/img/Physical.JPG";
-                            pictureBoxCategory1.SizeMode = PictureBoxSizeMode.StretchImage;
-                            break;
-
-                        case "Status":
-                            pictureBoxCategory1.Image = null;
-                            pictureBoxCategory1.Update();
-                            pictureBoxCategory1.ImageLocation = "C:/Users/Zouz/source/repos/PokemonCalculator/PokemonCalculator/img/Status.JPG";
-                            pictureBoxCategory1.SizeMode = PictureBoxSizeMode.StretchImage;
-                            break;
-
-                        case "Special":
-                            pictureBoxCategory1.Image = null;
-                            pictureBoxCategory1.Update();
-                            pictureBoxCategory1.ImageLocation = "C:/Users/Zouz/source/repos/PokemonCalculator/PokemonCalculator/img/Special.JPG";
-                            pictureBoxCategory1.SizeMode = PictureBoxSizeMode.StretchImage;
-                            break;
-
-                        default:
-                            break;
-                    }
-                    break;
-                }
-                    
-                
-            }
-            buttonMove1.Text = comboBoxMoves1.SelectedItem.ToString();*/
-        }
-
-        public void moveDetails(ComboBox combo, PictureBox picture, Button button)
+        public void moveDetailsCategory(ComboBox combo, PictureBox picture, PictureBox pictureType, Button button)
         {
             foreach (var move in movesList)
             {
@@ -171,27 +129,164 @@ namespace PokemonCalculator
                         default:
                             break;
                     }
+                    
+                    switch (move.Type)
+                    {
+                        case "Bug":
+                            pictureType.Image = null;
+                            pictureType.Update();
+                            pictureType.ImageLocation = "C:/Users/Zouz/source/repos/PokemonCalculator/PokemonCalculator/img/Bug.JPG";
+                            pictureType.SizeMode = PictureBoxSizeMode.StretchImage;
+                            break;
+
+                        case "Dark":
+                            pictureType.Image = null;
+                            pictureType.Update();
+                            pictureType.ImageLocation = "C:/Users/Zouz/source/repos/PokemonCalculator/PokemonCalculator/img/Dark.JPG";
+                            pictureType.SizeMode = PictureBoxSizeMode.StretchImage;
+                            break;
+
+                        case "Dragon":
+                            pictureType.Image = null;
+                            pictureType.Update();
+                            pictureType.ImageLocation = "C:/Users/Zouz/source/repos/PokemonCalculator/PokemonCalculator/img/Dragon.JPG";
+                            pictureType.SizeMode = PictureBoxSizeMode.StretchImage;
+                            break;
+
+                        case "Electric":
+                            pictureType.Image = null;
+                            pictureType.Update();
+                            pictureType.ImageLocation = "C:/Users/Zouz/source/repos/PokemonCalculator/PokemonCalculator/img/Electric.JPG";
+                            pictureType.SizeMode = PictureBoxSizeMode.StretchImage;
+                            break;
+
+                        case "Fairy":
+                            pictureType.Image = null;
+                            pictureType.Update();
+                            pictureType.ImageLocation = "C:/Users/Zouz/source/repos/PokemonCalculator/PokemonCalculator/img/Fairy.JPG";
+                            pictureType.SizeMode = PictureBoxSizeMode.StretchImage;
+                            break;
+
+                        case "Fighting":
+                            pictureType.Image = null;
+                            pictureType.Update();
+                            pictureType.ImageLocation = "C:/Users/Zouz/source/repos/PokemonCalculator/PokemonCalculator/img/Fighting.JPG";
+                            pictureType.SizeMode = PictureBoxSizeMode.StretchImage;
+                            break;
+
+                        case "Fire":
+                            pictureType.Image = null;
+                            pictureType.Update();
+                            pictureType.ImageLocation = "C:/Users/Zouz/source/repos/PokemonCalculator/PokemonCalculator/img/Fire.JPG";
+                            pictureType.SizeMode = PictureBoxSizeMode.StretchImage;
+                            break;
+
+                        case "Flying":
+                            pictureType.Image = null;
+                            pictureType.Update();
+                            pictureType.ImageLocation = "C:/Users/Zouz/source/repos/PokemonCalculator/PokemonCalculator/img/Flying.JPG";
+                            pictureType.SizeMode = PictureBoxSizeMode.StretchImage;
+                            break;
+
+                        case "Ghost":
+                            pictureType.Image = null;
+                            pictureType.Update();
+                            pictureType.ImageLocation = "C:/Users/Zouz/source/repos/PokemonCalculator/PokemonCalculator/img/Ghost.JPG";
+                            pictureType.SizeMode = PictureBoxSizeMode.StretchImage;
+                            break;
+
+                        case "Grass":
+                            pictureType.Image = null;
+                            pictureType.Update();
+                            pictureType.ImageLocation = "C:/Users/Zouz/source/repos/PokemonCalculator/PokemonCalculator/img/Grass.JPG";
+                            pictureType.SizeMode = PictureBoxSizeMode.StretchImage;
+                            break;
+
+                        case "Ground":
+                            pictureType.Image = null;
+                            pictureType.Update();
+                            pictureType.ImageLocation = "C:/Users/Zouz/source/repos/PokemonCalculator/PokemonCalculator/img/Ground.JPG";
+                            pictureType.SizeMode = PictureBoxSizeMode.StretchImage;
+                            break;
+
+                        case "Ice":
+                            pictureType.Image = null;
+                            pictureType.Update();
+                            pictureType.ImageLocation = "C:/Users/Zouz/source/repos/PokemonCalculator/PokemonCalculator/img/Ice.JPG";
+                            pictureType.SizeMode = PictureBoxSizeMode.StretchImage;
+                            break;
+
+                        case "Normal":
+                            pictureType.Image = null;
+                            pictureType.Update();
+                            pictureType.ImageLocation = "C:/Users/Zouz/source/repos/PokemonCalculator/PokemonCalculator/img/Normal.JPG";
+                            pictureType.SizeMode = PictureBoxSizeMode.StretchImage;
+                            break;
+
+                        case "Poison":
+                            pictureType.Image = null;
+                            pictureType.Update();
+                            pictureType.ImageLocation = "C:/Users/Zouz/source/repos/PokemonCalculator/PokemonCalculator/img/Poison.JPG";
+                            pictureType.SizeMode = PictureBoxSizeMode.StretchImage;
+                            break;
+
+                        case "Psychic":
+                            pictureType.Image = null;
+                            pictureType.Update();
+                            pictureType.ImageLocation = "C:/Users/Zouz/source/repos/PokemonCalculator/PokemonCalculator/img/Psychic.JPG";
+                            pictureType.SizeMode = PictureBoxSizeMode.StretchImage;
+                            break;
+
+                        case "Rock":
+                            pictureType.Image = null;
+                            pictureType.Update();
+                            pictureType.ImageLocation = "C:/Users/Zouz/source/repos/PokemonCalculator/PokemonCalculator/img/Rock.JPG";
+                            pictureType.SizeMode = PictureBoxSizeMode.StretchImage;
+                            break;
+
+                        case "Steel":
+                            pictureType.Image = null;
+                            pictureType.Update();
+                            pictureType.ImageLocation = "C:/Users/Zouz/source/repos/PokemonCalculator/PokemonCalculator/img/Steel.JPG";
+                            pictureType.SizeMode = PictureBoxSizeMode.StretchImage;
+                            break;
+
+                        case "Water":
+                            pictureType.Image = null;
+                            pictureType.Update();
+                            pictureType.ImageLocation = "C:/Users/Zouz/source/repos/PokemonCalculator/PokemonCalculator/img/Water.JPG";
+                            pictureType.SizeMode = PictureBoxSizeMode.StretchImage;
+                            break;
+                        default:
+                            break;
+                    }
                     break;
                 }
+
 
 
             }
             button.Text = combo.SelectedItem.ToString();
         }
 
+        private void comboBoxMoves1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            moveDetailsCategory(comboBoxMoves1, pictureBoxCategory1, pictureBoxType1, buttonMove1);
+        }
+
         private void comboBoxMoves2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            moveDetails(comboBoxMoves2, pictureBoxCategory2, buttonMove2);
+            moveDetailsCategory(comboBoxMoves2, pictureBoxCategory2, pictureBoxType2, buttonMove2);
         }
 
         private void comboBoxMoves3_SelectedIndexChanged(object sender, EventArgs e)
         {
-            moveDetails(comboBoxMoves3, pictureBoxCategory3, buttonMove3);
+            moveDetailsCategory(comboBoxMoves3, pictureBoxCategory3, pictureBoxType3, buttonMove3);
         }
 
         private void comboBoxMoves4_SelectedIndexChanged(object sender, EventArgs e)
         {
-            moveDetails(comboBoxMoves4, pictureBoxCategory4, buttonMove4);
+            moveDetailsCategory(comboBoxMoves4, pictureBoxCategory4, pictureBoxType4, buttonMove4);
         }
     }
 }

@@ -43,10 +43,18 @@ namespace PokemonCalculator
             this.pictureBoxCategory3 = new System.Windows.Forms.PictureBox();
             this.pictureBoxCategory4 = new System.Windows.Forms.PictureBox();
             this.pictureBoxCategory2 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxType1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxType3 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxType2 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxType4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCategory1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCategory3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCategory4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCategory2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxType1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxType3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxType2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxType4)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBoxMoves1
@@ -154,26 +162,66 @@ namespace PokemonCalculator
             // 
             // pictureBoxCategory4
             // 
-            this.pictureBoxCategory4.Location = new System.Drawing.Point(750, 124);
+            this.pictureBoxCategory4.Location = new System.Drawing.Point(746, 43);
             this.pictureBoxCategory4.Name = "pictureBoxCategory4";
-            this.pictureBoxCategory4.Size = new System.Drawing.Size(38, 16);
+            this.pictureBoxCategory4.Size = new System.Drawing.Size(42, 16);
             this.pictureBoxCategory4.TabIndex = 13;
             this.pictureBoxCategory4.TabStop = false;
             // 
             // pictureBoxCategory2
             // 
-            this.pictureBoxCategory2.Location = new System.Drawing.Point(750, 43);
+            this.pictureBoxCategory2.Location = new System.Drawing.Point(746, 124);
             this.pictureBoxCategory2.Name = "pictureBoxCategory2";
-            this.pictureBoxCategory2.Size = new System.Drawing.Size(38, 16);
+            this.pictureBoxCategory2.Size = new System.Drawing.Size(42, 16);
             this.pictureBoxCategory2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBoxCategory2.TabIndex = 14;
             this.pictureBoxCategory2.TabStop = false;
+            // 
+            // pictureBoxType1
+            // 
+            this.pictureBoxType1.BackColor = System.Drawing.Color.LightGray;
+            this.pictureBoxType1.Location = new System.Drawing.Point(566, 90);
+            this.pictureBoxType1.Name = "pictureBoxType1";
+            this.pictureBoxType1.Size = new System.Drawing.Size(42, 16);
+            this.pictureBoxType1.TabIndex = 15;
+            this.pictureBoxType1.TabStop = false;
+            // 
+            // pictureBoxType3
+            // 
+            this.pictureBoxType3.BackColor = System.Drawing.Color.LightGray;
+            this.pictureBoxType3.Location = new System.Drawing.Point(566, 171);
+            this.pictureBoxType3.Name = "pictureBoxType3";
+            this.pictureBoxType3.Size = new System.Drawing.Size(42, 16);
+            this.pictureBoxType3.TabIndex = 16;
+            this.pictureBoxType3.TabStop = false;
+            // 
+            // pictureBoxType2
+            // 
+            this.pictureBoxType2.BackColor = System.Drawing.Color.LightGray;
+            this.pictureBoxType2.Location = new System.Drawing.Point(746, 90);
+            this.pictureBoxType2.Name = "pictureBoxType2";
+            this.pictureBoxType2.Size = new System.Drawing.Size(42, 16);
+            this.pictureBoxType2.TabIndex = 17;
+            this.pictureBoxType2.TabStop = false;
+            // 
+            // pictureBoxType4
+            // 
+            this.pictureBoxType4.BackColor = System.Drawing.Color.LightGray;
+            this.pictureBoxType4.Location = new System.Drawing.Point(746, 171);
+            this.pictureBoxType4.Name = "pictureBoxType4";
+            this.pictureBoxType4.Size = new System.Drawing.Size(42, 16);
+            this.pictureBoxType4.TabIndex = 18;
+            this.pictureBoxType4.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBoxType4);
+            this.Controls.Add(this.pictureBoxType2);
+            this.Controls.Add(this.pictureBoxType3);
+            this.Controls.Add(this.pictureBoxType1);
             this.Controls.Add(this.pictureBoxCategory2);
             this.Controls.Add(this.pictureBoxCategory4);
             this.Controls.Add(this.pictureBoxCategory3);
@@ -194,6 +242,10 @@ namespace PokemonCalculator
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCategory3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCategory4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCategory2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxType1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxType3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxType2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxType4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -213,6 +265,10 @@ namespace PokemonCalculator
         private System.Windows.Forms.PictureBox pictureBoxCategory3;
         private System.Windows.Forms.PictureBox pictureBoxCategory4;
         private System.Windows.Forms.PictureBox pictureBoxCategory2;
+        private System.Windows.Forms.PictureBox pictureBoxType1;
+        private System.Windows.Forms.PictureBox pictureBoxType3;
+        private System.Windows.Forms.PictureBox pictureBoxType2;
+        private System.Windows.Forms.PictureBox pictureBoxType4;
     }
 }
 
