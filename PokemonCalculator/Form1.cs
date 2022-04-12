@@ -27,7 +27,7 @@ namespace PokemonCalculator
             InitializeComponent();
             jsonToMove();
             jsonToPokemon();
-            pictureBoxCategory2.ImageLocation = @"C:\Users\Zouz\source\repos\PokemonCalculator\PokemonCalculator\img\Electric.gif";
+            
 
         }
 
@@ -101,15 +101,58 @@ namespace PokemonCalculator
         {
             foreach (var move in movesList)
             {
-                if (comboBoxMoves1.SelectedItem.Equals(move.Name))
+                switch (move.Category)
                 {
-                    richTextBoxPokemon.Text += move.Name + move.PowerPoint + move.Category + move.Type;
-
+                    case "Physical":
+                        pictureBoxCategory1.Image = null;
+                        //pictureBoxCategory1.ImageLocation = "C:/Users/Zouz/source/repos/PokemonCalculator/PokemonCalculator/img/Physical.JPG";
+                        pictureBoxCategory1.SizeMode = PictureBoxSizeMode.StretchImage;
+                        break;
+                    case "Status":
+                        pictureBoxCategory1.Image = null;
+                        pictureBoxCategory1.ImageLocation = "C:/Users/Zouz/source/repos/PokemonCalculator/PokemonCalculator/img/Status.JPG";
+                        pictureBoxCategory1.SizeMode = PictureBoxSizeMode.StretchImage;
+                        break;
+                    case "Special":
+                        pictureBoxCategory1.Image = null;
+                        pictureBoxCategory1.ImageLocation = "C:/Users/Zouz/source/repos/PokemonCalculator/PokemonCalculator/img/Special.JPG";
+                        pictureBoxCategory1.SizeMode = PictureBoxSizeMode.StretchImage;
+                        break;
+                    default:
+                        break;
                 }
 
-                pictureBoxCategory1.ImageLocation = "C:/Users/Zouz/source/repos/PokemonCalculator/PokemonCalculator/img/Physical.JPG";
-                pictureBoxCategory1.SizeMode = PictureBoxSizeMode.StretchImage;
-                pictureBoxCategory2.SizeMode = PictureBoxSizeMode.StretchImage;
+
+                /*if (move.Category.Equals("Physical"))
+                {
+                    pictureBoxCategory1.ImageLocation = null;
+                    pictureBoxCategory1.InitialImage = null;
+                    pictureBoxCategory1.Dispose();
+                    pictureBoxCategory1.Refresh();
+                    //pictureBoxCategory1.Update();
+                    pictureBoxCategory1.ImageLocation = "C:/Users/Zouz/source/repos/PokemonCalculator/PokemonCalculator/img/Physical.JPG";
+                    pictureBoxCategory1.SizeMode = PictureBoxSizeMode.StretchImage;
+                }
+                if (move.Category.Equals("Status"))
+                {
+                    pictureBoxCategory1.ImageLocation = null;
+                    pictureBoxCategory1.InitialImage = null;
+                    pictureBoxCategory1.Dispose();
+                    pictureBoxCategory1.Refresh();
+                    //pictureBoxCategory1.Update();
+                    pictureBoxCategory1.ImageLocation = "C:/Users/Zouz/source/repos/PokemonCalculator/PokemonCalculator/img/Status.JPG";
+                    pictureBoxCategory1.SizeMode = PictureBoxSizeMode.StretchImage;
+                }
+                if (move.Category.Equals("Special"))
+                {
+                    pictureBoxCategory1.ImageLocation = null;
+                    pictureBoxCategory1.InitialImage = null;
+                    pictureBoxCategory1.Dispose();
+                    pictureBoxCategory1.Refresh();
+                    //pictureBoxCategory1.Update();
+                    pictureBoxCategory1.ImageLocation = "C:/Users/Zouz/source/repos/PokemonCalculator/PokemonCalculator/img/Special.JPG";
+                    pictureBoxCategory1.SizeMode = PictureBoxSizeMode.StretchImage;
+                }*/
             }
         }
 
