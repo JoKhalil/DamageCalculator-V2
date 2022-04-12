@@ -21,7 +21,7 @@ namespace PokemonCalculator
 
         public string Name { get => name; set => name = value; }
         public string Type { get => type; set => type = value; }
-        public int PowerPoint { get => power; set => power = value; }
+        public int Power { get => power; set => power = value; }
         public String Category { get => category; set => category = value; }
 
         public Move(String category, String name, String type, int power)

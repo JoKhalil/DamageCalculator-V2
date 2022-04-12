@@ -48,6 +48,10 @@ namespace PokemonCalculator
             this.pictureBoxType2 = new System.Windows.Forms.PictureBox();
             this.pictureBoxType4 = new System.Windows.Forms.PictureBox();
             this.pictureBoxPokemon = new System.Windows.Forms.PictureBox();
+            this.labelPower1 = new System.Windows.Forms.Label();
+            this.labelPower2 = new System.Windows.Forms.Label();
+            this.labelPower3 = new System.Windows.Forms.Label();
+            this.labelPower4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCategory1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCategory3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCategory2)).BeginInit();
@@ -223,11 +227,55 @@ namespace PokemonCalculator
             this.pictureBoxPokemon.TabIndex = 19;
             this.pictureBoxPokemon.TabStop = false;
             // 
+            // labelPower1
+            // 
+            this.labelPower1.AutoSize = true;
+            this.labelPower1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelPower1.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelPower1.Location = new System.Drawing.Point(450, 43);
+            this.labelPower1.Name = "labelPower1";
+            this.labelPower1.Size = new System.Drawing.Size(2, 17);
+            this.labelPower1.TabIndex = 20;
+            // 
+            // labelPower2
+            // 
+            this.labelPower2.AutoSize = true;
+            this.labelPower2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelPower2.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelPower2.Location = new System.Drawing.Point(630, 43);
+            this.labelPower2.Name = "labelPower2";
+            this.labelPower2.Size = new System.Drawing.Size(2, 17);
+            this.labelPower2.TabIndex = 21;
+            // 
+            // labelPower3
+            // 
+            this.labelPower3.AutoSize = true;
+            this.labelPower3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelPower3.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelPower3.Location = new System.Drawing.Point(450, 124);
+            this.labelPower3.Name = "labelPower3";
+            this.labelPower3.Size = new System.Drawing.Size(2, 17);
+            this.labelPower3.TabIndex = 22;
+            // 
+            // labelPower4
+            // 
+            this.labelPower4.AutoSize = true;
+            this.labelPower4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelPower4.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelPower4.Location = new System.Drawing.Point(630, 124);
+            this.labelPower4.Name = "labelPower4";
+            this.labelPower4.Size = new System.Drawing.Size(2, 17);
+            this.labelPower4.TabIndex = 23;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.labelPower4);
+            this.Controls.Add(this.labelPower3);
+            this.Controls.Add(this.labelPower2);
+            this.Controls.Add(this.labelPower1);
             this.Controls.Add(this.pictureBoxPokemon);
             this.Controls.Add(this.pictureBoxType4);
             this.Controls.Add(this.pictureBoxType2);
@@ -259,6 +307,7 @@ namespace PokemonCalculator
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxType4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPokemon)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -282,6 +331,10 @@ namespace PokemonCalculator
         private System.Windows.Forms.PictureBox pictureBoxType2;
         private System.Windows.Forms.PictureBox pictureBoxType4;
         private System.Windows.Forms.PictureBox pictureBoxPokemon;
+        private System.Windows.Forms.Label labelPower2;
+        private System.Windows.Forms.Label labelPower3;
+        private System.Windows.Forms.Label labelPower4;
+        private System.Windows.Forms.Label labelPower1;
     }
 }
 

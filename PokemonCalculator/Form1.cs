@@ -98,12 +98,14 @@ namespace PokemonCalculator
             }
         }
 
-        public void moveDetailsCategory(ComboBox combo, PictureBox picture, PictureBox pictureType, Button button)
+        public void moveDetailsCategory(ComboBox combo, PictureBox picture, PictureBox pictureType, Button button, Label label)
         {
             foreach (var move in movesList)
             {
                 if (combo.SelectedItem.Equals(move.Name))
                 {
+                    label.Text = move.Power.ToString();
+
                     switch (move.Category)
                     {
                         case "Physical":
@@ -267,27 +269,28 @@ namespace PokemonCalculator
 
 
             }
+
             button.Text = combo.SelectedItem.ToString();
         }
 
         private void comboBoxMoves1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            moveDetailsCategory(comboBoxMoves1, pictureBoxCategory1, pictureBoxType1, buttonMove1);
+            moveDetailsCategory(comboBoxMoves1, pictureBoxCategory1, pictureBoxType1, buttonMove1, labelPower1);
         }
 
         private void comboBoxMoves2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            moveDetailsCategory(comboBoxMoves2, pictureBoxCategory4, pictureBoxType2, buttonMove2);
+            moveDetailsCategory(comboBoxMoves2, pictureBoxCategory4, pictureBoxType2, buttonMove2, labelPower2);
         }
 
         private void comboBoxMoves3_SelectedIndexChanged(object sender, EventArgs e)
         {
-            moveDetailsCategory(comboBoxMoves3, pictureBoxCategory3, pictureBoxType3, buttonMove3);
+            moveDetailsCategory(comboBoxMoves3, pictureBoxCategory3, pictureBoxType3, buttonMove3, labelPower3);
         }
 
         private void comboBoxMoves4_SelectedIndexChanged(object sender, EventArgs e)
         {
-            moveDetailsCategory(comboBoxMoves4, pictureBoxCategory2, pictureBoxType4, buttonMove4);
+            moveDetailsCategory(comboBoxMoves4, pictureBoxCategory2, pictureBoxType4, buttonMove4, labelPower4);
         }
     }
 }
