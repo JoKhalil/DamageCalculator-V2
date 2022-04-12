@@ -27,6 +27,7 @@ namespace PokemonCalculator
             InitializeComponent();
             jsonToMove();
             jsonToPokemon();
+            pictureBoxCategory2.ImageLocation = @"C:\Users\Zouz\source\repos\PokemonCalculator\PokemonCalculator\img\Electric.gif";
 
         }
 
@@ -105,6 +106,10 @@ namespace PokemonCalculator
                     richTextBoxPokemon.Text += move.Name + move.PowerPoint + move.Category + move.Type;
 
                 }
+
+                pictureBoxCategory1.ImageLocation = "C:/Users/Zouz/source/repos/PokemonCalculator/PokemonCalculator/img/Physical.JPG";
+                pictureBoxCategory1.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureBoxCategory2.SizeMode = PictureBoxSizeMode.StretchImage;
             }
         }
 

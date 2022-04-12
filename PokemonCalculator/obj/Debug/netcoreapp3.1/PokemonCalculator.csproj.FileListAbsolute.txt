@@ -15,3 +15,4 @@ C:\Users\Zouz\source\repos\PokemonCalculator\PokemonCalculator\obj\Debug\netcore
 C:\Users\Zouz\source\repos\PokemonCalculator\PokemonCalculator\obj\Debug\netcoreapp3.1\PokemonCalculator.dll
 C:\Users\Zouz\source\repos\PokemonCalculator\PokemonCalculator\obj\Debug\netcoreapp3.1\PokemonCalculator.pdb
 C:\Users\Zouz\source\repos\PokemonCalculator\PokemonCalculator\obj\Debug\netcoreapp3.1\PokemonCalculator.genruntimeconfig.cache
+C:\Users\Zouz\source\repos\PokemonCalculator\PokemonCalculator\obj\Debug\netcoreapp3.1\PokemonCalculator.Properties.Resources.resources
